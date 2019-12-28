@@ -1,3 +1,4 @@
+@-moz-document url-prefix() {
 /* scanlines */
 body::before {
     content: "";
@@ -113,3 +114,4 @@ background-color:
     background: transparent;
 }
 /* --- */
+}
