@@ -1,0 +1,115 @@
+/* scanlines */
+body::before {
+    content: "";
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    animation-name: Static;
+    animation-duration: 0.4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(8, end);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 10em inset;
+    pointer-events: none !important;
+    background-image: url('https://initiate.space/discord/theme/zdewd.png') !important;
+    background-repeat: repeat;
+    background-position: 0px 0px;
+}
+body::after {
+    content: "";
+    color: white;
+    font-size: 20px;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 10000;
+    background-image: url(aaaa.css);
+    animation-name: Static;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(8, end);
+    background-repeat: repeat;
+    background-position: 0px 0px;
+}
+@keyframes Static{0%{background-position:0px 0px}100%{background-position:0px 4px}}
+
+/* general colors */
+.mx_MatrixChat > :not(.mx_LeftPanel_container):not(.mx_ResizeHandle) {
+    background-color: 
+    #030404;
+}
+.dark-panel {
+    background-color: 
+    #050606;
+}
+.mx_TagPanel {
+    background-color: 
+    #050606db;
+}
+mx_TopLeftMenuButton {
+background-color:
+    #050606db;
+}
+.mx_RoomTile_selected {
+    background-color: 
+    #090b0be6;
+}
+.mx_TagPanelButtons {
+    background-color: 
+    #050606db;
+}
+
+.mx_EventTile:hover .mx_EventTile_line, .mx_EventTile.mx_EventTile_actionBarFocused .mx_EventTile_line, .mx_EventTile.focus-visible:focus-within .mx_EventTile_line {
+    background-color: 
+    #090b0be6;
+}
+
+.mx_MessageActionBar {
+    background: 
+    #090b0be6;
+}
+.mx_MessageActionBar > * {
+    border: none;
+}
+.mx_RoomHeader_buttons {
+    background-color: transparent;
+}
+.mx_RoomBreadcrumbs {
+    background: none;
+}
+.mx_RoomBreadcrumbs .mx_IndicatorScrollbar_leftOverflowIndicator {
+    background: none;
+}
+.mx_TopLeftMenuButton {
+    background-color: transparent !important;
+}
+/* --- */
+/* link colors */
+a {
+    color: #e2cbac !important;
+}
+/* --- */
+.mx_EventTile:hover.mx_EventTile_verified .mx_EventTile_line {
+    border-left: 
+    #e2cbac 5px solid;
+}
+.mx_MemberList_invite, .mx_RightPanel_invite, .mx_MemberDeviceInfo_textButton, .mx_TabbedView_tabLabel_active, .mx_AccessibleButton_kind_primary {
+    color: 
+black;
+background-color:
+    white;
+}
+/* Avatar and shit */
+.mx_BaseAvatar_image {
+    background-color: transparent;
+    border-radius: 0px;
+}
+.mx_MemberInfo_avatar {
+    background: transparent;
+}
+/* --- */
