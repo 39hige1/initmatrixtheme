@@ -1,3 +1,18 @@
+/*
+
+██╗███╗   ██╗██╗████████╗██╗ █████╗ ████████╗███████╗
+██║████╗  ██║██║╚══██╔══╝██║██╔══██╗╚══██╔══╝██╔════╝
+██║██╔██╗ ██║██║   ██║   ██║███████║   ██║   █████╗  
+██║██║╚██╗██║██║   ██║   ██║██╔══██║   ██║   ██╔══╝  
+██║██║ ╚████║██║   ██║   ██║██║  ██║   ██║   ███████╗
+╚═╝╚═╝  ╚═══╝╚═╝   ╚═╝   ╚═╝╚═╝  ╚═╝   ╚═╝   ╚══════╝
+###################################################################################################
+
+This theme is made to replicate the initiate rocket.chat theme.
+Lets all love Lain.
+
+This theme is meant to be used with the dark version of riot/matrix
+###################################################################################################*/
 /* scanlines */
 body::before {
     content: "";
@@ -45,11 +60,11 @@ body::after {
 }
 .dark-panel {
     background-color: 
-    #050606;
+    transparent;
 }
 .mx_TagPanel {
     background-color: 
-    #050606db;
+    transparent;
 }
 mx_TopLeftMenuButton {
 background-color:
@@ -61,7 +76,7 @@ background-color:
 }
 .mx_TagPanelButtons {
     background-color: 
-    #050606db;
+    transparent;
 }
 
 .mx_EventTile:hover .mx_EventTile_line, .mx_EventTile.mx_EventTile_actionBarFocused .mx_EventTile_line, .mx_EventTile.focus-visible:focus-within .mx_EventTile_line {
@@ -111,5 +126,37 @@ background-color:
 }
 .mx_MemberInfo_avatar {
     background: transparent;
+}
+.mx_AutoHideScrollbar.mx_RoomBreadcrumbs.mx_AutoHideScrollbar_underflow.mx_IndicatorScrollbar_rightOverflow {
+    display: none;
+}
+.mx_TopLeftMenuButton.mx_AccessibleButton {
+    position: inherit;
+	height: 110px;
+	z-index: 1;
+    top: 0;
+    left: 5%;
+    min-height: 152px;
+}
+.mx_TopLeftMenuButton_name, .mx_AutoHideScrollbar.mx_RoomBreadcrumbs.mx_AutoHideScrollbar_underflow {
+    display: none;
+}
+
+.mx_TopLeftMenuButton.mx_AccessibleButton > .mx_BaseAvatar.mx_BaseAvatar_image {
+    width: 100%;
+    height: 100%;
+}
+
+/* --- */
+/* background */
+.matrixchat, .mx_MatrixChat {
+ background-image: url("https://initiate.space/discord/theme/paper.png");   
+}
+.mx_RightPanel.mx_fadable.dark-panel {
+
+    background-image: url("https://initiate.space/discord/theme/paper.png");
+    background-size: 700% 100%;
+    background-position: right;
+
 }
 /* --- */
