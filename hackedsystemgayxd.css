@@ -1,3 +1,4 @@
+
 /*
 
 ██╗███╗   ██╗██╗████████╗██╗ █████╗ ████████╗███████╗
@@ -28,7 +29,7 @@ body::before {
     animation-timing-function: steps(8, end);
     box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 10em inset;
     pointer-events: none !important;
-    background-image: url('https://initiate.space/discord/theme/zdewd.png') !important;
+    background-image: url('https://i.imgur.com/kmUgmv0.png') !important;
     background-repeat: repeat;
     background-position: 0px 0px;
 }
@@ -43,7 +44,6 @@ body::after {
     height: 100%;
     pointer-events: none;
     z-index: 10000;
-    background-image: url(aaaa.css);
     animation-name: Static;
     animation-duration: 0.2s;
     animation-iteration-count: infinite;
@@ -82,6 +82,7 @@ background-color:
 .mx_EventTile:hover .mx_EventTile_line, .mx_EventTile.mx_EventTile_actionBarFocused .mx_EventTile_line, .mx_EventTile.focus-visible:focus-within .mx_EventTile_line {
     background-color: 
     #090b0be6;
+    z-index: 0;
 }
 
 .mx_MessageActionBar {
@@ -149,6 +150,7 @@ border-bottom: solid 1px
 .mx_EventTile:hover.mx_EventTile_verified .mx_EventTile_line {
     border-left: 
     #e2cbac 5px solid;
+    z-index: 0;
 }
 .mx_MemberList_invite, .mx_RightPanel_invite, .mx_MemberDeviceInfo_textButton, .mx_TabbedView_tabLabel_active, .mx_AccessibleButton_kind_primary, .mx_Dialog button.mx_Dialog_primary, .mx_Dialog input[type="submit"].mx_Dialog_primary {
     color: 
@@ -187,8 +189,12 @@ white;
     padding-left: 5px;
     transition: all .2s ease;
     margin-left: 4%;
+    z-index: 0;
     
 
+}
+.mx_EventTile_body {
+    z-index: 5;
 }
 .mx_MatrixChat_useCompactLayout .mx_EventTile_line, .mx_MatrixChat_useCompactLayout .mx_EventTile_reply {
     padding-left: 5px;
@@ -202,6 +208,14 @@ white;
 .mx_EventTile_highlight .mx_EventTile_line, .mx_EventTile_highlight .markdown-body .mx_EventTile_line {
     background-color: 
     rgba(250,166,26,.1);
+    border-left: #faa61a 4px solid;
+}
+.mx_EventTile_highlight .mx_EventTile_content .markdown-body a.mx_UserPill_me, .mx_EventTile_content .markdown-body a.mx_AtRoomPill, .mx_EventTile_content .mx_AtRoomPill, .mx_MessageComposer_input .mx_AtRoomPill {
+    color: #ff4b55;
+    background-color: 
+    transparent;
+    padding-right: 5px;
+    text-shadow: 0px 0px 8px !important;
 }
 .mx_EventTile_isEditing {
     background-color: transparent;
@@ -226,6 +240,12 @@ white;
     -ms-user-select: none;
     user-select: none;
 }
+.mx_EventTile_content .markdown-body a.mx_UserPill, .mx_UserPill {
+    background-color: transparent;
+}
+.mx_Pill.mx_UserPill > .mx_BaseAvatar {
+    display: none;
+}
 .mx_EditMessageComposer .mx_BasicMessageComposer_input:focus {
     border-color: white;
 }
@@ -245,6 +265,7 @@ background-color:
     display: block;
     transition: all .2s ease;
     opacity: 0;
+    z-index: 0;
 }
 .mx_EventTile_selected > .mx_EventTile_line {
     border-left: 
@@ -283,6 +304,9 @@ background-color:
     background-color: 
     #0c0c0c;
 }
+.mx_MessageTimestamp {
+    z-index: -1;
+}
 
 .mx_BaseAvatar_image {
     background-color: transparent;
@@ -301,6 +325,12 @@ background-color:
     top: 0;
     left: 5%;
     min-height: 152px;
+    background-image: url('https://media.discordapp.net/attachments/635599518267867146/660578282986799104/smaller-4444.gif');
+background-size: contain;
+background-repeat: no-repeat;
+}
+.mx_LeftPanel.dark-panel {
+    margin-top: 10%;
 }
 .mx_TopLeftMenuButton_name, .mx_AutoHideScrollbar.mx_RoomBreadcrumbs.mx_AutoHideScrollbar_underflow {
     display: none;
@@ -309,6 +339,7 @@ background-color:
 .mx_TopLeftMenuButton.mx_AccessibleButton > .mx_BaseAvatar.mx_BaseAvatar_image {
     width: 100%;
     height: 100%;
+    visibility: hidden;
 }
 
 /* --- */
