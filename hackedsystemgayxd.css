@@ -147,6 +147,19 @@ white;
     
 
 }
+.mx_EventTile_isEditing {
+    background-color: transparent;
+}
+.mx_EditMessageComposer .mx_EditMessageComposer_buttons {
+ 	background-color: transparent;   
+}
+.mx_EditMessageComposer .mx_BasicMessageComposer_input {
+    background-color:
+    #090b0be6;
+}
+.mx_EditMessageComposer .mx_BasicMessageComposer_input:focus {
+    border-color: white;
+}
 .mx_EventTile_selected > .mx_EventTile_line {
     border-left: 
 #e2cbac 5px solid;
