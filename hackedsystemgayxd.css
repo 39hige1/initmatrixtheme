@@ -129,6 +129,13 @@ white;
 .mx_Dialog {
     background-color: #090b0be6
 }
+.mx_AccessibleButton_kind_secondary {
+    color: white;
+    z-index: 100000;
+}
+.mx_EditMessageComposer .mx_EditMessageComposer_buttons {
+    z-index: 100000;
+}
 /* --- */
 /* text */
 .mx_EventTile_line:hover {
