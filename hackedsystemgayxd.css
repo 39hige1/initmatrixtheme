@@ -108,6 +108,21 @@ background-color:
 a {
     color: #e2cbac !important;
 }
+
+.markdown-body blockquote {
+    margin: 0 0 16px;
+        margin-top: 0px;
+        margin-bottom: 16px;
+    padding: 0 15px;
+    color: 
+#3c7b3a;
+border-left: 4px solid
+    transparent;
+    padding-left: 0px;
+}
+.markdown-body blockquote::before {
+    content: ">";
+}
 /* --- */
 /* boxes n shit */
 .mx_EventTile:hover.mx_EventTile_verified .mx_EventTile_line {
